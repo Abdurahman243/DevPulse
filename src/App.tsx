@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import { Provider, useSelector, useDispatch } from 'react-redux';
