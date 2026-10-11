@@ -18,7 +18,7 @@ const resources = {
             telemetryFeed: 'Telemetry Feed',
             recentCommits: 'Recent Commits',
             subtitle: 'Real-time telemetry, REST endpoints, and GraphQL feed monitoring.',
-            // Clean keys translation
+
             statusOk: 'Operational (200 OK)',
             statusActive: 'Connected (GraphQL Endpoint Active)',
             commit1: 'Fix TypeScript build errors',
@@ -41,7 +41,7 @@ const resources = {
             telemetryFeed: 'ቴሌሜትሪ ፊድ',
             recentCommits: 'የቅርብ ጊዜ ኮሚቶች',
             subtitle: 'የእውነተኛ ጊዜ ቴሌሜትሪ፣ የ REST ኤንድፖይንቶች እና የ GraphQL ፊድ ክትትል።',
-            // Clean keys translation in Amharic
+
             statusOk: 'በሥራ ላይ ያለ (200 OK)',
             statusActive: 'ተገናኝቷል (ግራፍኪኤል ኤንድፖይንት ንቁ ነው)',
             commit1: 'የታይፕስክሪፕት ቢልድ ስህተቶችን አስተካክል',

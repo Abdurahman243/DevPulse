@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { store, type RootState } from './store/store';
 import { toggleTheme } from './store/settingsSlice';
 import { fetchRestMetrics, fetchGraphqlActivity } from './api/apiService';
-// @ts-ignore
+
 import './i18n/i18n';
 
 const queryClient = new QueryClient();
@@ -15,13 +15,13 @@ const DashboardContent: React.FC = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state: RootState) => state.settings.theme);
 
-  // TanStack Query for REST API metrics
+
   const { data: restData, isLoading: restLoading } = useQuery({
     queryKey: ['restMetrics'],
     queryFn: fetchRestMetrics,
   });
 
-  // TanStack Query for GraphQL activity
+
   const { data: gqlData, isLoading: gqlLoading } = useQuery({
     queryKey: ['graphqlActivity'],
     queryFn: fetchGraphqlActivity,
@@ -32,7 +32,7 @@ const DashboardContent: React.FC = () => {
     i18n.changeLanguage(newLang);
   };
 
-  // Compact modern pill button style
+
   const pillButtonStyle = {
     backgroundColor: theme === 'dark' ? '#374151' : '#ffffff',
     color: theme === 'dark' ? '#f9fafb' : '#1f2937',
@@ -46,7 +46,7 @@ const DashboardContent: React.FC = () => {
     transition: 'all 0.2s ease-in-out',
   };
 
-  // Modern Chic Card Container Style
+
   const modernCardStyle = {
     background: theme === 'dark' ? '#1f2937' : '#ffffff',
     padding: '1.5rem',
